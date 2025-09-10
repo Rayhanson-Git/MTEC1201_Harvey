@@ -28,7 +28,7 @@ col = lerpColor(col1, col2, i);
 //  console.log(r);
   
   stroke(col);
-
+  line(pmouseX, pmouseY, mouseX, mouseY);
 
   filter(BLUR, 2);
   //fill (col);
@@ -48,7 +48,6 @@ col = lerpColor(col1, col2, i);
   function mouseDragged(){
 
     strokeWeight(random(10,40));
-      line(pmouseX, pmouseY, mouseX, mouseY);
 
   }
 
