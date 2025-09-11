@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Rayhanson-Git!
+# 👋 Hi, I'm Harvey Alexander Rayhanson!
 
 Welcome to my GitHub profile!  
 Here you'll find my latest explorations in web design, creative coding, and digital media.
