@@ -10,7 +10,8 @@ let obstacleDs = []
 let numObstacles = 30
 let crossedObstacle = false;
 let pCrossedObstacle = false; 
-
+let font
+let font2
 let count = 0;
 
 let g
@@ -19,17 +20,25 @@ function preload(){
   wasp = loadImage("wasp.png")
   print(wasp);
   angleMode(DEGREES)
+  font = loadFont('font.TTF');
   
 }
 
 function setup(){
   createCanvas(windowWidth,windowHeight);
+
+  textFont(font);
+  textSize(36);
   
   noFill()
   stroke(255)
 
   g = createGraphics(width, height);
   g.background(255,100,0)
+
+  
+  b = createGraphics(width, height);
+  b.background(0,0,0)
 
   for(let i = 0; i<numObstacles; i++){
     obstacleXLocs[i] = random(width)
@@ -82,7 +91,9 @@ for(let i = 0; i<numObstacles; i++){
    imageMode(CORNER);
    textSize(30)
    fill(255)
-   image(g,0,0)
+   image(b,0,0)
+
+  textFont(font);
    text("game over!! :( Press F5 to restart", width/2, 100)
   noLoop()
  }
