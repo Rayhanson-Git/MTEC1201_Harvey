@@ -83,7 +83,7 @@ for(let i = 0; i<numObstacles; i++){
    textSize(30)
    fill(255)
    image(g,0,0)
-   text("game over", width/2, 100)
+   text("game over!! :( Press F5 to restart", width/2, 100)
   noLoop()
  }
 
