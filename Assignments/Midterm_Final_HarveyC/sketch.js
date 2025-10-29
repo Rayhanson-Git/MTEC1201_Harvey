@@ -1,6 +1,6 @@
   // Course: MTEC 1201 — Midterm Project
-  // Student: Harvey Chowdhury
-  // Instructions for the Player:
+  // Harvey Chowdhury
+  // Instructions:
   //   • Move the wasp with the ARROW KEYS (or WASD) to dodge the circles.
   //   • Press SPACE or CLICK to start. Press R to restart at any time.
   //   • You have 4 lives. Colliding with a circle removes 1 life.
@@ -260,8 +260,9 @@ function handleCollisions(){
         lastHitAt = now; // start cooldown
         if(hitSfx){ try{ hitSfx.play(); }catch(e){} }
         // push the player away a bit so it feels like knockback
-        player.x = constrain(player.x + (player.x - o.x)*0.6, player.r, width - player.r);
-        player.y = constrain(player.y + (player.y - o.y)*0.6, player.r, height - player.r);
+        // player.x = constrain(player.x + (player.x - o.x)*0.6, player.r, width - player.r);
+        // player.y = constrain(player.y + (player.y - o.y)*0.6, player.r, height - player.r);
+        
         // also move the circle away a little
         o.x += (o.x - player.x)*0.8;
         o.y += (o.y - player.y)*0.8;
