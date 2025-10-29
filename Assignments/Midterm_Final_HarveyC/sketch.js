@@ -1,5 +1,6 @@
   // Course: MTEC 1201 — Midterm Project
   // Harvey Chowdhury
+  
   // Instructions:
   //   • Move the wasp with the ARROW KEYS (or WASD) to dodge the circles.
   //   • Press SPACE or CLICK to start. Press R to restart at any time.
