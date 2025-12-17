@@ -68,7 +68,8 @@ function draw() {
 
 function addOrbiter(x, y) {
   // keep it from getting too heavy
-  if (orbiters.length < 300) {
+  // creates a new Orbiter at the given coordinates.
+  if (orbiters.length < 300) {      // total number of orbiters to prevent the sketch from slowing down.
     orbiters.push(new Orbiter(x, y));
   }
 }
@@ -105,11 +106,11 @@ function keyPressed() {
   if (keyCode === UP_ARROW) globalSpeed += 0.005;
   if (keyCode === DOWN_ARROW) globalSpeed -= 0.005;
 
-  //speed range
+  //speed range so nothing gets stuck or crazy
   globalSpeed = constrain(globalSpeed, 0.002, 0.08);
 }
 
-function resetScene() {
+function resetScene() {  //clears everything out like starting from beginning
   orbiters = [];
   colorMode = 1;
   globalSpeed = 0.02;
@@ -133,8 +134,8 @@ function resetScene() {
 
 
 
-function drawHUD() {
-  fill(190, 220, 255, 160);
+function drawHUD() {  // renders a simple heads‑up display on top of the canvas
+  fill(190, 220, 255, 160);  // light blue color
   textSize(14);
   textAlign(LEFT, TOP);
 
@@ -147,7 +148,7 @@ function drawHUD() {
   text("Orbiters: " + orbiters.length + "   Speed: " + nf(globalSpeed, 1, 3), 16, 54);
 }
 
-function windowResized() {
+function windowResized() {  // called automatically when the browser window changes size
   resizeCanvas(windowWidth, windowHeight);
 }
 
