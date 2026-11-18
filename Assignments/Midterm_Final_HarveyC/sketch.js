@@ -188,6 +188,21 @@ function mouseReleased() {
   touchTarget = null;
 }
 
+// Touch screens: p5 does not call the mouse functions for a finger, so these
+// share them. Returning false keeps the page from scrolling or zooming.
+function touchStarted() {
+  return mousePressed();
+}
+
+function touchMoved() {
+  return mouseDragged();
+}
+
+function touchEnded() {
+  mouseReleased();
+  return false;
+}
+
 // The pause and the sound buttons in the corner (see index.html) call these.
 function togglePause() {
   if (state === 'PLAY') {

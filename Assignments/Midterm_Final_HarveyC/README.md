@@ -134,8 +134,6 @@ design/           the script that draws the SVGs in assets/ (npm install && npm 
 
 ## Status and limits
 
-- **The font is a commercial typeface.** `font.TTF` is URW Bauhaus 93, which is not free to redistribute. It is kept
-  for now because the game's look depends on it; replacing it with an open font is on the list.
 - **Touch steering is a first version.** It works well for wide sweeps; very fine dodges are still easier with the
   keys.
 - **It needs a network connection the first time**, to load p5.js and p5.sound from jsDelivr.
