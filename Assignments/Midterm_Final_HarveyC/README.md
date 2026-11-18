@@ -126,7 +126,7 @@ sketch.js         the whole game
 wasp.png          the player
 sadface.png       the game-over picture
 gameover.mp3      the hit sound
-font.TTF          the display font
+fonts/            Righteous, the display font, with its licence (SIL Open Font License)
 favicon.svg       the tab icon
 assets/           README images: hero, diagram, screenshots, the demo recording and the social preview
 design/           the script that draws the SVGs in assets/ (npm install && npm run build)
@@ -156,8 +156,10 @@ the score as time survived, and Space, click, the arrows, WASD and R.
 - Fixed: the wasp picture was drawn squashed (3 × 2.4); it is square, as the file is.
 - Changed: a dark card sits behind the menu and game-over text, and the arrow keys and Space no longer scroll the
   page.
+- Changed: the display font is now [Righteous](https://fonts.google.com/specimen/Righteous) by Astigmatic, under the
+  SIL Open Font License. The game used to ship a commercial typeface that is not free to redistribute.
 
 ## Credits
 
 Made by Harvey Rayhanson ([rayhanson.tech](https://rayhanson.tech)) with [p5.js](https://p5js.org) and p5.sound.
-No licence has been chosen for this repository, so all rights are reserved.
+The display font is Righteous by Astigmatic (SIL Open Font License, in [`fonts/OFL.txt`](fonts/OFL.txt)). No licence has been chosen for this repository, so all rights are reserved.

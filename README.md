@@ -33,6 +33,9 @@ Assignments/Midterm_Final_HarveyC
 Assignments/Final             Orbit Playground, as handed in
 ```
 
+Sketches that use a display font use Righteous by Astigmatic, under the SIL Open Font License (`OFL-Righteous.txt`
+sits beside each copy).
+
 Each folder is a self-contained p5.js sketch: open its `index.html` through a local server (for example
 `python3 -m http.server`) to run it.
 

@@ -49,7 +49,7 @@ let uiFont = null;
 function preload() {
   waspImg = loadImage('wasp.png', undefined, () => (waspImg = null));
   sadImg = loadImage('sadface.png', undefined, () => (sadImg = null));
-  uiFont = loadFont('font.TTF', undefined, () => (uiFont = null));
+  uiFont = loadFont('fonts/Righteous-Regular.ttf', undefined, () => (uiFont = null)); // SIL Open Font License, see fonts/OFL.txt
   if (typeof loadSound === 'function') {
     hitSfx = loadSound('gameover.mp3', undefined, () => (hitSfx = null));
   }
