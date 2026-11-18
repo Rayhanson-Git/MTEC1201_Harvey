@@ -2,14 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Wasp Dodge+</title>
+    <meta name="description" content="A survival game in p5.js: guide a wasp through moving circles and stay in play for as long as possible. Four lives, power-ups and a best score." />
+    <meta name="theme-color" content="#101014" />
+    <meta name="author" content="Harvey Rayhanson" />
+    <meta property="og:title" content="Wasp Dodge+" />
+    <meta property="og:description" content="Four lives. One more second." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wasp-dodge.rayhanson.tech/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Rayhanson-Git/MTEC1201_Harvey/main/Assignments/Midterm_Final_HarveyC/assets/social.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <style>
-      html, body { margin:0; padding:0; background:#0e0e12; }
-      canvas { display:block; outline:1px solid #222; }
+      html, body { margin: 0; padding: 0; height: 100%; background: #0e0e12; overflow: hidden; }
+      canvas {
+        display: block;
+        /* no scrolling, zooming or text selection while playing on a touch screen */
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      noscript { display: grid; place-items: center; height: 100vh; color: #fff; font-family: system-ui, sans-serif; }
     </style>
   </head>
   <body>
+    <noscript>Wasp Dodge+ needs JavaScript to run.</noscript>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
